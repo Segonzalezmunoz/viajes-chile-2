@@ -1,0 +1,25 @@
+/* body  */
+body{
+    background: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* titulos quienes somos/ destacados y contacto  */
+.titulos{
+    font-size: x-large;
+
+}
+
+/* tamaño de los iconos en los botones que desaparecen de la seccion quienes somos */
+i{
+    font-size: x-large;
+}
+
+
+
+/* footer */
+footer{
+    display: inline-flex;
+    
+}
