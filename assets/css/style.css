@@ -6,6 +6,11 @@ body{
 }
 
 
+/* animacion smooth-scroll*/
+html{
+    scroll-behavior: smooth;
+}
+
 /* titulos quienes somos/ destacados y contacto  */
 .titulos{
     font-size: x-large;
