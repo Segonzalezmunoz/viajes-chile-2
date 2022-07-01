@@ -16,13 +16,12 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/js/">
 </head>
 
 <body>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="container navbar navbar-expand-lg navbar-dark">
         <img class="mx-5" src="assets/img/viajes.svg" style="width: 2rem" alt="">
         <a class="navbar-brand">Viajes Chile</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -84,7 +83,8 @@
         <div class="text-left">
             <div class="row">
                 <div class="col-lg-4 col-sm-12 mb-5">
-                    <button class="btn btn-info btn-sm btn-block mb-3" onclick="myFunction1()"><i
+                    <button  class="btn btn-info btn-sm btn-block mb-3" data-toggle="tooltip" data-placement="left"
+                    title="Has click"  onclick="myFunction1()"><i
                             class="fa-solid fa-plane"></i></button>
                     <p id="t1">Aerolíneas con rutas a lo largo de todo el pais. Desde aquí tendrás a tu
                         disposición las mejores ofertas de pasajes en avión y todo lo necesario para organizar tus
@@ -99,11 +99,13 @@
                         vuelos en globo aerostático sobre Santiago. Contamos con el respaldo de grandes empresas ligadas
                         al turismo con más de 20 años en la industria. Viajes chile a seleccionando a los mejores tour
                         operadores y perfeccionando la experiencia de venta.</p>
-                    <button class="btn btn-info btn-sm btn-block mb-3" onclick="myFunction2()"><i
+                    <button class="btn btn-info btn-sm btn-block mb-3" data-toggle="tooltip" data-placement="left"
+                    title="Hace click" onclick="myFunction2()"><i
                             class="fa-solid fa-mountain"></i></button>
                 </div>
                 <div class="col-lg-4 col-sm-12 mb-5">
-                    <button class="btn btn-info btn-sm btn-block mb-3" onclick="myFunction3()"><i
+                    <button class="btn btn-info btn-sm btn-block mb-3" data-toggle="tooltip" data-placement="right"
+                    title="Hace click" onclick="myFunction3()"><i
                             class="fa-solid fa-route"></i></button>
                     <p id="t3">Tu comodidad es nuestra prioridad, por eso ampliamos cada día más nuestra red de
                         rutas terrestres, actualmente contamos con más de 150 rutas de norte a sur de Chile y
@@ -124,8 +126,9 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card bg-info mb-5" style="width: 15rem;">
-                    <img src="assets/img/card1.jpg" class="card-img-top" style="height: 8rem;" alt="...">
-                    <div class="card-body">
+                    <img src="assets/img/card1.jpg" class="card-img-top" style="height: 8rem;" alt="..." >
+                    <div class="card-body" data-toggle="tooltip" data-placement="left"
+                    title="Hace click para más informacion">
                         <h5 class="card-title text-left">Lago General Carrera.</h5>
                         <p class="card-text text-left">La Patagonia chilena es un lugar de incalculable valor natural
                             que tiene
@@ -136,7 +139,8 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card bg-info mb-5" style="width: 15rem;">
                     <img src="assets/img/card2.jpg" class="card-img-top;" style="height: 8rem;" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" data-toggle="tooltip" data-placement="left"
+                    title="Hace click para más informacion">
                         <h5 class="card-title text-left">Laguna en el desierto de Atacama.</h5>
                         <p class="card-text text-left">Agua transparente de color turquesa, que en contraste con el
                             blanco del
@@ -147,7 +151,8 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card bg-info mb-5" style="width: 15rem;">
                     <img src="assets/img/card3.jpg" class="card-img-top" style="height: 8rem;" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" data-toggle="tooltip" data-placement="left"
+                    title="Hace click para más informacion">
                         <h5 class="card-title text-left">Laguna aculeo.</h5>
                         <p class="card-text text-left">Ubicada en la comuna de Paine, a 65 kilómetros al suroeste de la
                             ciudad de Santiago, la
@@ -158,7 +163,8 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="card bg-info mb-5" style="width: 15rem;">
                     <img src="assets/img/card4.jpg" class="card-img-top" style="height: 8rem;" alt="...">
-                    <div class="card-body">
+                    <div class="card-body" data-toggle="tooltip" data-placement="left"
+                    title="Hace click para más informacioná">
                         <h5 class="card-title text-left">Reserva Biológica Huilo Huilo.</h5>
                         <p class="card-text text-left">Un área bajo protección enclavada en los Andes Patagónicos
                             del Sur de Chile. Posee especies de flora y fauna únicas en el mundo.</p>
@@ -202,7 +208,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
             </div>
             </div>
-            <button type="button" id="enviar" class="btn btn-info mb-5" data-toggle="tooltip" data-placement="right"
+            <button type="button" id="Enviar" class="btn btn-info mb-5" data-toggle="tooltip" data-placement="right"
                 title="¿Está correcto?">Enviar</button>
         </form>
 
@@ -210,14 +216,14 @@
 
     <!-- footer -->
     <footer class="container-fluid text-center bg-info p-2">
-        <div class="mt-3">
+        <div class="mt-3 container">
             <P class="titulos">VIAJES CHILE</P>
         </div>
-        <div class="mx-auto mt-4 ">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-square"></i>
+        <div class="container mt-4 ">
+            <i class="fa-brands fa-github mx-1"></i>
+            <i class="fa-brands fa-linkedin mx-1"></i>
+            <i class="fa-brands fa-twitter mx-1"></i>
+            <i class="fa-brands fa-facebook-square mx-1"></i>
         </div>
     </footer>
 
@@ -230,49 +236,9 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 
-    <!-- botones que corregir y enviar a la carpeta cript.js -->
-    <script>
-        function myFunction1() {
-            var x = document.getElementById("t1");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        function myFunction2() {
-            var x = document.getElementById("t2");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        function myFunction3() {
-            var x = document.getElementById("t3");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-
-<!-- boton enviar ubicado en el form -->
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-            document.getElementById("enviar").onclick = function () {
-                alert("tu mensaje fue enviado");
-            }
-        });
-    </script>
-</body>
+   
+ </body>
 
 </html>
